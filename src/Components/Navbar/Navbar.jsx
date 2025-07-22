@@ -11,15 +11,17 @@ import profile from '../../assets/jack.png'
 const Navbar=()=>{
   return (
     <nav className='flex-div'>
-        <div className='nave-left flex-div'>
+        <div className='nav-left flex-div'>
             <img src={menu_icon} alt=""  className='menu-icon'/>
             <img src={logo} alt="" className='logo' />
         </div>
-        <div className='nave-middle flex-div'>
+        <div className='nav-middle flex-div'>
+            <div className="search-box flex-div">
             <input type="text" placeholder='Search'/>
             <img src={search} alt="" />
+            </div>
         </div>
-        <div className='nave-right flex-div'>
+        <div className='nav-right flex-div'>
             <img src={upload} alt="" />
             <img src={more} alt="" />
             <img src={notification} alt="" />
